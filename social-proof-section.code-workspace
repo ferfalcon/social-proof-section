@@ -4,5 +4,12 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"less.compile": {
+			"compress": false,
+			"sourceMap": true,
+			"out":  "${workspaceRoot}\\styles\\",
+			"main": "${workspaceRoot}\\styles\\styles.less"
+		}
+	}
 }
