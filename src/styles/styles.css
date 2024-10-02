@@ -1,5 +1,5 @@
 :root {
-	// Colours
+	/* // Colours */
 	--cl-main-100: hsl(301, 23%, 96%);
 	--cl-main-400: hsl(301, 10%, 53%);
 	--cl-main-500: hsl(301, 44%, 22%);
@@ -8,28 +8,28 @@
 
 	--cl-neutral-100: hsl(0, 0%, 100%);
 
-	// TYPOGRAPHY
-	// Family
+	/* // TYPOGRAPHY */
+	/* // Family */
 	--ff-main: "League Spartan", sans-serif;
 
-	// Size
+	/* // Size */
 	--fs-400: 1.063rem;
 	--fs-500: 1.188rem;
 	--fs-700: 2.5rem;
 	--fs-900: 3.5rem;
 	
-	// Weight
+	/* // Weight */
 	--fw-regular: 400;
 	--fw-medium: 500;
 	--fw-bold: 700;
 
-	// Line height
+	/* // Line height */
 	--lh-300: 1.375rem;
 	--lh-400: 1.563rem;
 	--lh-600: 2rem;
 	--lh-800: 3rem;
 
-	// Letter spacing
+	/* // Letter spacing */
 	--le-100: -.019rem;
 	--le-300: -.039rem;
 	--le-600: -.089rem;
