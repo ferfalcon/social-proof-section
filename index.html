@@ -11,53 +11,16 @@
 	<link href="./src/styles/styles.css" rel="stylesheet">
 </head>
 <body class="top-wrapper">
-	<main class="social-proof">
-		<h1 class="social-proof__heading">10,000+ of our users love our products.</h1>
-		<p class="social-proof__copy">We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.</p>
-		<ul class="social-proof__rating-wrapper">
+	<main class="social-proof" data-main>
+		<h1 class="social-proof__heading" data-heading>Page Heading</h1>
+		<p class="social-proof__copy" data-copy>Copy text placeholder.</p>
+		<ul class="social-proof__rating-wrapper" data-ratings>
 			<li class="social-proof__rating">
 				<img src="/icon-star.svg" alt="Star">
-				<img src="/icon-star.svg" alt="Star">
-				<img src="/icon-star.svg" alt="Star">
-				<img src="/icon-star.svg" alt="Star">
-				<img src="/icon-star.svg" alt="Star">
-				<p class="social-proof__rating-copy">Rated 5 Stars in Reviews</p>
-			</li>
-			<li class="social-proof__rating">
-				<img src="/icon-star.svg" alt="Star">
-				<img src="/icon-star.svg" alt="Star">
-				<img src="/icon-star.svg" alt="Star">
-				<img src="/icon-star.svg" alt="Star">
-				<img src="/icon-star.svg" alt="Star">
-				<p class="social-proof__rating-copy">Rated 5 Stars in Report Guru</p>
-			</li>
-			<li class="social-proof__rating">
-				<img src="/icon-star.svg" alt="Star">
-				<img src="/icon-star.svg" alt="Star">
-				<img src="/icon-star.svg" alt="Star">
-				<img src="/icon-star.svg" alt="Star">
-				<img src="/icon-star.svg" alt="Star">
-				<p class="social-proof__rating-copy">Rated 5 Stars in BestTech</p>
+				<p class="social-proof__rating-copy">Loading data</p>
 			</li>
 		</ul>
-		<article class="social-proof__review">
-			<img src="/image-colton.jpg" alt="Colton Smith">
-			<h2>Colton Smith</h2>
-			<p>Verified Buyer</p>
-			<p>"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"</p>
-		</article>
-		<article class="social-proof__review">
-			<img src="/image-irene.jpg" alt="Irene Roberts">
-			<h2>Irene Roberts</h2>
-			<p>Verified Buyer</p>
-			<p>"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."</p>
-		</article>
-		<article class="social-proof__review">
-			<img src="/image-anne.jpg" alt="Anne Wallace">
-			<h2>Anne Wallace</h2>
-			<p>Verified Buyer</p>
-			<p>"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"</p>
-		</article>
+		<div data-testimonials></div>
 	</main>
 	<footer class="signature">
 		<p>
@@ -65,5 +28,6 @@
 			Coded by <a href="https://www.linkedin.com/in/fernandofalcon/" target="_blank">Fer Falcon</a>.
 		</p>
 	</footer>
+	<script type="module" src="./src/scripts/main.js"></script>
 </body>
 </html>
