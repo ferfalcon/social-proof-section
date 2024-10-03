@@ -1,0 +1,29 @@
+{
+	"heading": "10,000+ of our users love our products.",
+	"copy": "We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.",
+	"ratings": [
+		"Rated 5 Stars in Reviews",
+		"Rated 5 Stars in Report Guru",
+		"Rated 5 Stars in BestTech"
+	],
+	"testimonials": [
+		{
+			"image": "./image-colton.jpg",
+			"name": "Colton Smith",
+			"category": "Verified Buyer",
+			"testimonial": "\"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!\""
+		},
+		{
+			"image": "./image-irene.jpg",
+			"name": "Irene Roberts",
+			"category": "Verified Buyer",
+			"testimonial": "\"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery.\""
+		},
+		{
+			"image": "./image-anne.jpg",
+			"name": "Anne Wallace",
+			"category": "Verified Buyer",
+			"testimonial": "\"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!\""
+		}
+	]
+}
