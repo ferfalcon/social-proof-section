@@ -1,34 +1,48 @@
-export default function printJsonObject(jsonObject) {
-	document.querySelector('[data-heading]').innerHTML = jsonObject.heading;
-	document.querySelector('[data-copy]').innerHTML = jsonObject.copy;
+export default function printJsonObject(data) {
+	printHeading(data.heading);
+	printCopy(data.copy);
+	printRatings(data.ratings);
+	printTestimonials(data.testimonials, "article");
 
-	let ratings = ``;
-	jsonObject.ratings.forEach(rating => {
-		ratings += `
-			<li class="social-proof__rating">
-				<img src="./icon-star.svg" alt="Star">
-				<img src="./icon-star.svg" alt="Star">
-				<img src="./icon-star.svg" alt="Star">
-				<img src="./icon-star.svg" alt="Star">
-				<img src="./icon-star.svg" alt="Star">
-				<p class="social-proof__rating-copy">${rating}</p>
-			</li>
-		`;
-	});
-	document.querySelector('[data-ratings]').innerHTML = ratings;
+	function printHeading(heading) {
+		const element = document.querySelector('[data-heading]');
+		element ? element.innerHTML = heading : null;
+	}
 
-	// console.log(jsonObject.testimonials.forEach(el => console.log(el.name)))
-	let articles = ``;
-	jsonObject.testimonials.forEach(testimonial => {
-		articles += `
-			<article class="social-proof__review">
-				<img src="${testimonial.image}" alt="${testimonial.name}">
-				<h2>${testimonial.name}</h2>
-				<p>${testimonial.category}</p>
-				<p>${testimonial.testimonial}</p>
-			</article>
-		`
-		console.log(testimonial.name)
-	})
-	document.querySelector('[data-testimonials]').innerHTML = articles;
+	function printCopy(copy) {
+		const element = document.querySelector('[data-copy]');
+		element ? element.innerHTML = copy : null;
+	}
+
+	function printRatings(ratings) {
+		let ratingsHTML = ``;
+		ratings.forEach(rating => {
+			ratingsHTML += `
+				<li class="social-proof__rating   rating-card">
+					<img class="rating-card__stars" src="./icon-5-stars.svg" alt="5 Stars" width="117" height="16">
+					<p class="rating-card__copy   rating-card__copy--type">${rating}</p>
+				</li>`;
+		});
+
+		const element = document.querySelector('[data-ratings]');
+		element ? element.innerHTML = ratingsHTML : null;
+	}
+
+	function printTestimonials(testimonials, element) {
+		let testimonialsHTML = ``;
+		testimonials.forEach(testimonial => {
+			testimonialsHTML += `
+				<li>
+					<${element} class="testimonial-card">
+						<img class="testimonial-card__image" src="${testimonial.image}" alt="${testimonial.name}">
+						<h2 class="testimonial-card__name   testimonial-card__name--type">${testimonial.name}</h2>
+						<p class="testimonial-card__category   testimonial-card__category--type">${testimonial.category}</p>
+						<p class="testimonial-card__testimonial   testimonial-card__testimonial--type">${testimonial.testimonial}</p>
+					</${element}>
+				</li>`
+		})
+
+		const wrapper = document.querySelector('[data-testimonials]');
+		wrapper ? wrapper.innerHTML = testimonialsHTML : null;
+	}
 }

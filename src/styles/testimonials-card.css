@@ -1,0 +1,51 @@
+.testimonial-card {
+	border-radius: .5rem;
+	padding: 2.5rem 2rem 2.188rem;
+	background-color: var(--cl-main-500);
+
+	display: grid;
+	gap: 0 1.5rem;
+	grid-template-columns: minmax(min-content, auto) 1fr;
+	grid-template-areas:
+		'img					name'
+		'img 					category'
+		'testimonial	testimonial';
+
+	.testimonial-card__image {
+		grid-area: img;
+		max-width: 2.5rem;
+		aspect-ratio: 1;
+		overflow: hidden;
+		border-radius: 100%;
+	}
+
+	.testimonial-card__name {
+		grid-area: name;
+		margin: 0;
+	}
+
+	.testimonial-card__category {
+		grid-area: category;
+		margin: 0;
+	}
+
+	.testimonial-card__testimonial {
+		grid-area: testimonial;
+		margin: 0;
+	}
+
+	.testimonial-card__name--type {
+		color: var(--cl-neutral-100);
+		font: var(--ty-section-heading);
+	}
+
+	.testimonial-card__category--type {
+		color: var(--cl-accent-500);
+		font: var(--ty-section-subtitle);
+	}
+
+	.testimonial-card__testimonial--type {
+		color: var(--cl-neutral-100);
+		font: var(--ty-section-copy);
+	}
+}

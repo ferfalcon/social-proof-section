@@ -1,0 +1,17 @@
+.body {
+	font-family: var(--ff-main);
+	color: var(--cl-main-500);
+	align-content: center;
+	margin: 0;
+	min-height: 100svh;
+	background: 
+	url(/src/assets/images/bg-pattern-top-mobile.svg) top left no-repeat,
+	url(/src/assets/images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
+	background-size: auto, contain;
+
+	@media (min-width: 64rem) {
+		background-image: 
+		url(/src/assets/images/bg-pattern-top-desktop.svg),
+		url(/src/assets/images/bg-pattern-bottom-desktop.svg);
+	}
+}

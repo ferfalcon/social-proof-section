@@ -1,0 +1,78 @@
+.social-proof {
+	width: 90%;
+	max-width: 20.438rem;
+	margin: 5.125rem auto;
+	display: grid;
+	grid-template-areas: 
+		"heading"
+		"copy"
+		"ratings"
+		"testimonials";
+
+	@media (min-width: 64rem) {
+		max-width: 69.375rem;
+		grid-template-areas: 
+			"heading 				ratings"
+			"copy 					ratings"
+			"testimonials 	testimonials";
+	}
+	
+	.social-proof__heading {
+		grid-area: heading;
+		margin: 0 0 1rem;
+	}
+	
+	.social-proof__copy {
+		grid-area: copy;
+		margin: 0 0 2.5rem;
+	}
+	
+	.social-proof__ratings {
+		grid-area: ratings;
+		display: grid;
+		gap: 1rem;
+		margin: 0 0 3.125rem;
+		padding: 0;
+	}
+	
+	.social-proof__testimonials {
+		display: grid;
+		grid-area: testimonials;
+		gap: 1rem;
+
+		@media (min-width: 64rem) {
+			gap: 1.875rem;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		& > :nth-child(2) {
+			margin-top: 1rem;
+		}
+
+		& > :nth-child(3) {
+			margin-top: 2rem;
+		}
+	}
+
+	.social-proof__heading--type {
+		color: var(--cl-main-500);
+		font: var(--ty-heading);
+		letter-spacing: var(--le-600);
+		text-align: center;
+	
+		@media (min-width: 64rem) {
+			text-align: initial;
+		}
+	}
+	
+	.social-proof__copy--type {
+		color: var(--cl-main-400);
+		font: var(--ty-copy);
+		letter-spacing: var(--le-300);
+		text-align: center;
+	
+		@media (min-width: 64rem) {
+			text-align: initial;
+		}
+	}
+}
