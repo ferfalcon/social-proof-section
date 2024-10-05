@@ -4,13 +4,15 @@
 	margin: 5.125rem auto;
 	display: grid;
 	grid-template-areas: 
-		"heading"
-		"copy"
-		"ratings"
-		"testimonials";
-
+	"heading"
+	"copy"
+	"ratings"
+	"testimonials";
+	
 	@media (min-width: 64rem) {
 		max-width: 69.375rem;
+		gap: 1rem;
+		grid-template-columns: 1fr 1fr;
 		grid-template-areas: 
 			"heading 				ratings"
 			"copy 					ratings"
@@ -20,11 +22,21 @@
 	.social-proof__heading {
 		grid-area: heading;
 		margin: 0 0 1rem;
+		max-width: 445px;
+
+		@media (min-width: 64rem) {
+			margin: 0;
+		}
 	}
 	
 	.social-proof__copy {
 		grid-area: copy;
 		margin: 0 0 2.5rem;
+		max-width: 445px;
+
+		@media (min-width: 64rem) {
+			margin: 0;
+		}
 	}
 	
 	.social-proof__ratings {
@@ -33,6 +45,18 @@
 		gap: 1rem;
 		margin: 0 0 3.125rem;
 		padding: 0;
+		
+		@media (min-width: 64rem) {
+			margin: 0;
+
+			& > :nth-child(2) {
+				margin-left: 3rem;
+			}
+
+			& > :nth-child(3) {
+				margin-left: 6rem;
+			}
+		}
 	}
 	
 	.social-proof__testimonials {
@@ -41,16 +65,17 @@
 		gap: 1rem;
 
 		@media (min-width: 64rem) {
+			margin-top: 4.5rem;
 			gap: 1.875rem;
 			grid-template-columns: 1fr 1fr 1fr;
-		}
-
-		& > :nth-child(2) {
-			margin-top: 1rem;
-		}
-
-		& > :nth-child(3) {
-			margin-top: 2rem;
+	
+			& > :nth-child(2) {
+				margin-top: 1rem;
+			}
+	
+			& > :nth-child(3) {
+				margin-top: 2rem;
+			}
 		}
 	}
 

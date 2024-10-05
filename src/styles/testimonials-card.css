@@ -22,16 +22,18 @@
 	.testimonial-card__name {
 		grid-area: name;
 		margin: 0;
+		align-self: center;
 	}
 
 	.testimonial-card__category {
 		grid-area: category;
 		margin: 0;
+		align-self: center;
 	}
 
 	.testimonial-card__testimonial {
 		grid-area: testimonial;
-		margin: 0;
+		margin: 2rem 0 0;
 	}
 
 	.testimonial-card__name--type {
@@ -47,5 +49,6 @@
 	.testimonial-card__testimonial--type {
 		color: var(--cl-neutral-100);
 		font: var(--ty-section-copy);
+		letter-spacing: -.02em;
 	}
 }
